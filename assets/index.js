@@ -24,7 +24,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'What will this project be used for',
+        message: 'Provide instructions how to use this application',
     },
     {
         type: 'input',
@@ -54,22 +54,57 @@ const questions = [
         name: 'email',
         message: 'Please enter your email address: ',
     },
-    {
-        //not sure about this one: table of contents
-        type: 'input',
-        name: 'tableOfContents',
-        message:'message',
-    },
   ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(readme, answers) {
+    readme = `project name: ${answers.projectTitle.toLowerCase().split(" ").join("")}.README.md`;
+    answers = `
+    ${answers.projectTitle}
+
+    ## License    //add badge here
+    Notice: this application is covered under ${answers.license} 
+
+    ## Table of Contents
+    [Description](#description)
+    [Installation](#installation instructions)
+    [Usage](#usage instructions)
+    [License](#license)
+    [Contributing](#contributors)
+    [Tests](#test instructions)
+    [Questions](#questions)
+
+    ## Description
+    ${answers.description}
+
+    ## Installation Instructions
+    ${answers.installation}
+
+    ## Usage Instructions
+    ${answers.usage}
+
+    ## Contributors
+    ${answers.contributing}
+
+    ## Test Instructions
+    ${answers.tests}
+
+    ## Questions
+    Github Profile: ${answers.questions}
+
+    Please email with any questions
+    ${answers.email}
+    `
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
     .then(answers => {
-        // Use user feedback for... whatever!!
+
+        fs.writeFile(readme, writeToFile(questions, answers));
+        //correct this format 
+      
       })
 }
 
