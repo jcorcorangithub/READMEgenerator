@@ -54,10 +54,10 @@ ${renderLicenseBadge(answers.license)}
   ${renderLicenseSection(answers.license)}
   
   ## Questions
-  Github Profile: ${answers.questions}
+  Github username: ${answers.questions}
   
-  Please email with any questions
-  ${answers.email}
+    My email:
+    ${answers.email}
   `;
 }
 

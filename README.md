@@ -1,7 +1,7 @@
 README Generator
   
 ## Description
-The goal of this project is to create an application that uses the console to create a README file. This application prompts the user for information and uses that information to generate a readme file using a template. After generating the file it creates it containing all the inputted information.
+The goal of this project is to create an application that accepts user input via the console and with the input generates a readme file. The information obtained conissts of the following: Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions. This application takes the input and allocates it appropriately throughout a template readme. This readem is the generated for the user.
 
 link to github repo:
 https://github.com/jcorcorangithub/READMEgenerator
