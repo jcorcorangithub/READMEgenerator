@@ -1,12 +1,12 @@
 function renderLicenseBadge(license) {
-  if(license == null || license == ""){
+  if(license == "...no license"){
     return "";
   } else {
     return `![badge] (https://img.shields.io/badge/license-${license}-brightgreen)`}
 }
 
 function renderLicenseLink(license) {
-  if(license == null || license == ""){
+  if(license == "...no license"){
     return "";
   } else {
     return "* [License](#license)";
@@ -14,7 +14,7 @@ function renderLicenseLink(license) {
 }
 
 function renderLicenseSection(license) {
-  if(license == null || license == ""){
+  if(license == "...no license"){
     return "";
   } else {
     return `## License    
@@ -31,10 +31,10 @@ ${renderLicenseBadge(answers.license)}
   * [Description](#description)
   * [Installation](#installation-instructions)
   * [Usage](#usage-instructions)
-  ${renderLicenseLink(answers.license)}
   * [Contributing](#contributors)
   * [Tests](#test-instructions)
   * [Questions](#questions)
+  ${renderLicenseLink(answers.license)}
   
   ## Description
   ${answers.description}
@@ -51,13 +51,14 @@ ${renderLicenseBadge(answers.license)}
   ## Test Instructions
   ${answers.tests}
   
-  ${renderLicenseSection(answers.license)}
-  
   ## Questions
   Github username: ${answers.questions}
   
     My email:
     ${answers.email}
+
+  ${renderLicenseSection(answers.license)}
+  
   `;
 }
 
