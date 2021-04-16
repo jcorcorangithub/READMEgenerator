@@ -14,12 +14,6 @@ Node fs
 ## Contributors
 I will be the sole contributor of this project 
 
-## Test Instructions
-rr
-
-## License    
-MIT 
-
 ## Contact
 Name: James Corcoran 
 email: jpcsoccer1234@gmail.com
