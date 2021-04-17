@@ -1,8 +1,11 @@
 function renderLicenseBadge(license) {
-  if(license == "...no license"){
-    return "";
-  } else {
-    return `[![License](https://img.shields.io/badge/License-${license}%202.0-blue.svg)](https://opensource.org/licenses/${license}-2.0)`
+  switch(license){
+    case 'Apache': 
+      return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+    case 'MIT':
+      return '![badge](https://img.shields.io/badge/license-MIT-brightgreen)';
+    case '...no license':
+      return '';
   }
 }
 
