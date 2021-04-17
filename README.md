@@ -6,7 +6,8 @@ The goal of this project is to create an application that accepts user input via
 link to github repo:
 https://github.com/jcorcorangithub/READMEgenerator
 
-link to video///////////////////
+link to video
+https://drive.google.com/file/d/1O9mxY3C-T6yQImHiAMHsXN9y9A9VFw3S/view
 
 ## Technologies
 JavaScript
@@ -20,4 +21,4 @@ I will be the sole contributor of this project
 Name: James Corcoran 
 email: jpcsoccer1234@gmail.com
 
-![alt text](screenshot.jpg)
+![alt text](screenshots/screenshot.jpg)
