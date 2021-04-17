@@ -2,7 +2,8 @@ function renderLicenseBadge(license) {
   if(license == "...no license"){
     return "";
   } else {
-    return `![badge] (https://img.shields.io/badge/license-${license}-brightgreen)`}
+    return `[![License](https://img.shields.io/badge/License-${license}%202.0-blue.svg)](https://opensource.org/licenses/${license}-2.0)`
+  }
 }
 
 function renderLicenseLink(license) {
@@ -24,7 +25,7 @@ function renderLicenseSection(license) {
 
 function generateMarkdown(answers) {
   return answers = 
-  `${answers.projectTitle}
+  `${answers.projectTitle}  
 ${renderLicenseBadge(answers.license)}
   
   ## Table of Contents

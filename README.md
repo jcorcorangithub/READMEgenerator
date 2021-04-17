@@ -6,6 +6,8 @@ The goal of this project is to create an application that accepts user input via
 link to github repo:
 https://github.com/jcorcorangithub/READMEgenerator
 
+link to video///////////////////
+
 ## Technologies
 JavaScript
 Node Inquirer
