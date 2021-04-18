@@ -1,4 +1,4 @@
-REAME Generator  
+README generator  
 ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
   
   ## Table of Contents
@@ -11,25 +11,25 @@ REAME Generator
   * [License](#license)
   
   ## Description
-  this application allows a programmer to use a template ...
+  this is a breif descriptio of my project.this is a breif descriptio of my p
   
   ## Installation Instructions
-  clone repo, save onto computer, run with node js on terminal
+  clone repo, open terminal and find file, run file with node index.js
   
   ## Usage Instructions
-  answer each user prompt
+  simply follow each question 
   
   ## Contributors
-  emial me for that
+  email me about that
   
   ## Test Instructions
-  emial me for that
+  email me about that
   
   ## Questions
   Github username: jcorcorangithub
   
     My email:
-    myemailaddress
+    jpcemail.net
 
   ## License    
     Notice: this application is covered under MIT 
